@@ -1,13 +1,49 @@
 namespace WebApplication1
 {
-    public class WeatherForecast
+    public class User
     {
-        public DateTime Date { get; set; }
+        private int Id { get; set; }
 
-        public int TemperatureC { get; set; }
+        private string Nombre { get; set; }
 
-        public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
+        private string Apellido { get; set; }
 
-        public string? Summary { get; set; }
+        public string NombreUsuario { get; set; }
+
+        public string Contraseña { get; set; }
+
+        public string Mail { get; set; }
+    }
+    public class Producto
+    {
+        private int Id { get; set; }
+
+        private string Descripcion { get; set; }
+
+        private int Costo { get; set; }
+
+        public int PrecioVenta { get; set; }
+
+        public int Stock { get; set; }
+
+        public int IdUsuario { get; set; }
+    }
+    public class ProductoVendido
+    {
+        private int Id { get; set; }
+
+        private int IdProducto { get; set; }
+
+        private int Stock { get; set; }
+
+        public int IdVenta { get; set; }
+    }
+    public class Venta
+    {
+        public int Id { get; set; }
+
+        public string Comentarios { get; set; }
+
+        public int IdUsuario { get; set; }
     }
 }
