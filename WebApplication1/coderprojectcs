@@ -1,6 +1,7 @@
 namespace WebApplication1
 {
     public class User
+   
     {
         private int Id { get; set; }
 
@@ -14,6 +15,7 @@ namespace WebApplication1
 
         public string Mail { get; set; }
     }
+    
     public class Producto
     {
         private int Id { get; set; }
@@ -28,6 +30,7 @@ namespace WebApplication1
 
         public int IdUsuario { get; set; }
     }
+    
     public class ProductoVendido
     {
         private int Id { get; set; }
@@ -38,6 +41,7 @@ namespace WebApplication1
 
         public int IdVenta { get; set; }
     }
+    
     public class Venta
     {
         public int Id { get; set; }
